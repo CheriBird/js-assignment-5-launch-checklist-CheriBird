@@ -33,6 +33,10 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 
     let launchReady = false;
     let validatePilot = validateInput(pilot);
+
+    // would be good to have an additional validation to check all fields at once
+    // and if any are empty, alert that "All fields are required."
+
     // console.log("validate pilot msg: " + validatePilot);
     if (validatePilot === "Empty") {
         document.getElementById("pilotStatus").innerHTML = `Pilot Ready`;
